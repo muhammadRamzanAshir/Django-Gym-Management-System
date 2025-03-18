@@ -1,0 +1,15 @@
+{% load static %}
+<!-- <section class="banner-section set-bg" style="background-image: url('{{ banner.background_image.url }}'); background-size: cover; background-position: center; background-repeat: no-repeat;"> -->
+<section class="banner-section" style="background-image: url('{{ banner.background_image.url }}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="bs-text">
+                    <h2>{{ banner.heading }}</h2>
+                    <div class="bt-tips">{{ banner.subheading }}</div>
+                    <a href="{{ banner.button_link }}" class="primary-btn btn-normal second_hover">{{ banner.button_text }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

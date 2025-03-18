@@ -1,0 +1,29 @@
+{% load static %}
+<div class="gettouch-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="gt-text">
+                    <i class="fa fa-map-marker"></i>
+                    <p>{{ contact_info.address|linebreaksbr }}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gt-text">
+                    <i class="fa fa-mobile"></i>
+                    <ul>
+                        {% for phone in contact_info.get_phone_numbers %}
+                        <li>{{ phone }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="gt-text email">
+                    <i class="fa fa-envelope"></i>
+                    <p>{{ contact_info.email }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

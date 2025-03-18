@@ -1,0 +1,13 @@
+{% load static %}
+<div class="gallery-section">
+    <div class="gallery">
+        <div class="grid-sizer"></div>
+        {% for image in gallery_images %}
+        <div class="gs-item {% if forloop.first or forloop.last %} grid-wide {% endif %} set-bg" data-setbg="{{ image.image.url }}">
+            <a href="{{ image.image.url }}" class="thumb-icon image-popup"><i class="fa fa-picture-o"></i></a>
+        </div>
+        {% empty %}
+        <p>No gallery images available.</p>
+        {% endfor %}
+    </div>
+</div>

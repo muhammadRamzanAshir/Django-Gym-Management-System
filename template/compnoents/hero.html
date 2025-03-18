@@ -1,0 +1,21 @@
+{% load static %}
+<section class="hero-section">
+    <div class="hs-slider owl-carousel">
+        {% for slide in hero_slides %}
+        <div class="hs-item " style="background-image: url('{{ slide.image.url }}');">
+            <div class="container">
+                <div class="row align-content-center ">
+                    <div class="col-lg-6 offset-lg-6">
+                        <div class="hi-text">
+                            <span>{{ slide.tagline }}</span>
+                            <h1><strong>{{ slide.title }}</strong></h1>
+                            {% comment %} <a href="{% url 'auth' %}" class="primary-btn first_hover" style="border:1px solid #f36100">REGISTER</a> {% endcomment %}
+                            <a href="" class="primary-btn btn-normal second_hover">LOGIN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,57 @@
+{% load static %}
+<header class="header-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="logo">
+                    <a href="">
+                    {% if site_settings.logo %}
+                        <img src="{{ site_settings.logo.url }}" alt="Site Logo">
+                    {% else %}
+                        <h1 class="text-light">Upload Logo</h1>
+                    {% endif %}
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <nav class="nav-menu">
+                    <ul>
+                        <li class="active"><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Classes</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Classes timetable</a></li>
+                                <li><a href="">Bmi calculate</a></li>
+                                <li><a href="">Our team</a></li>
+                                <li><a href="">Gallery</a></li>
+                                <li><a href="">Our blog</a></li>
+                                <li><a href="">404</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <div class="top-option">
+                    <div class="to-search search-switch">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="to-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas-open">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>

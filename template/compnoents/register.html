@@ -1,0 +1,34 @@
+<div class="left">
+    <div id="ic">
+        <h2>Sign Up</h2>
+        <p>{{ auth_forms.pargraph_singup}}</p>
+        <form id="girisyap" name="signup_form" id="signup_form" method="post" action="{% url 'signup' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="control-label" for="inputNormal">Username</label>
+                <input type="text" name="username" id="username" class="bp-suggestions form-control" cols="50" rows="10" required>
+            </div>
+            <div class="yarim sn form-group">
+                <label class="control-label" for="inputNormal">First Name</label>
+                <input type="text" name="fname" id="fname" value="" class="bp-suggestions form-control" cols="50" rows="10" required>
+            </div>
+            <div class="yarim sn form-group">
+                <label class="control-label" for="inputNormal">Last Name</label>
+                <input type="text" name="lname" id="lname" value="" class="bp-suggestions form-control" cols="50" rows="10" required>
+            </div>
+            <div class="form-group">
+            <label class="control-label" for="inputNormal">Email</label>
+            <input type="text" name="email" id="email" class="bp-suggestions form-control" cols="50" rows="10" required>
+            </div>
+            <div class="form-group">
+            <label class="control-label" for="inputNormal">Password</label>
+            <input type="password" name="password" id="password" value="" class="bp-suggestions form-control" cols="50" rows="10" required>
+            </div>
+            <div class="form-group soninpt">
+            <label class="control-label" for="inputNormal">Confirm Password</label>
+            <input type="text" name="cpassword" id="cpassword" class="bp-suggestions form-control" cols="50" rows="10" required>
+            </div>
+            <input type="submit" name="signup_submit" id="signup_submit"  class="girisbtn" />
+        </form>
+    <button id="moveright">Login</button>
+</div>

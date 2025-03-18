@@ -1,0 +1,20 @@
+<div class="right">
+    <div id="ic">
+        <h2>Login</h2>
+        <p>{{ auth_forms.pargraph_singup}}</p>
+        <form name="login-form" id="girisyap" id="sidebar-user-login" method="post" onsubmit="return false;">
+            {% csrf_token %}
+            <div class="form-group">
+            <label class="control-label" for="inputNormal">Username</label>
+            <input type="text" name="log" class="bp-suggestions form-control" cols="50" rows="10"></input>
+            </div>
+            <div class="form-group soninpt">
+            <label class="control-label" for="inputNormal">Password</label>
+            <input type="password" name="pwd" class="bp-suggestions form-control" cols="50" rows="10"></input>
+            </div>
+            <input type="submit" value="Login" class="girisbtn" tabindex="100" />
+        </form>
+        <button id="moveleft">Sign Up</button>
+    </div>
+</div>
+</div>

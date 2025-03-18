@@ -1,0 +1,14 @@
+{% load static %}
+{% include "compnoents/head.html" %}
+<div id="fback">
+    <div class="girisback" style="background-image: url('{{ auth_forms.girisback.url }} " ></div>
+    <div class="kayitback" style="background-image: url('{{ auth_forms.kayitback.url }} "></div>
+</div>
+<div id="textbox">
+    {% include "compnoents/message.html" %}
+    <div class="toplam">
+        {% include "compnoents/register.html" %}
+    </div>
+        {% include "compnoents/login.html" %}
+</div>
+{% include "compnoents/scripts.html" %}
